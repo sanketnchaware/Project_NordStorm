@@ -10,7 +10,8 @@ import { SignupFlow2 } from "./components/Signup/SignupFlow2";
 import { SignupFlow3 } from "./components/Signup/SignupFlow3";
 import { Checkout1 } from "./components/Checkout/Checkout1";
 import { Checkout2 } from "./components/Checkout/Checkout2";
-
+import { PrivateRoute } from "./PrivateRoute/PrivateRoute";
+import { Success } from "./components/Success/Success";
 function App() {
   return (
     <div className="App">
@@ -36,11 +37,14 @@ function App() {
         <Route exact path="/product">
           <BagContainer />
         </Route>
-        <Route path="/cart">
+        <PrivateRoute path="/cart">
           <Cart />
-        </Route>
+        </PrivateRoute>
         <Route exact path="/product/:id">
           <ProductInfo />
+        </Route>
+        <Route exact path="/success">
+          <Success />
         </Route>
       </Switch>
 

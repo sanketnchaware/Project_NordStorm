@@ -75,7 +75,7 @@ export const ParentHome = () => {
             <GreatDeals />
             <DesignClearance />
             <BestGift />
-            <StockSuffer />
+            {/* <StockSuffer /> */}
             <GiveStylish />
             <DontKnow />
             <div className="getinspirecomponent">

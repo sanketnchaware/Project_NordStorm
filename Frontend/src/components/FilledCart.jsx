@@ -156,7 +156,7 @@ export const FilledCart = () => {
                                     <p>₹ {total}</p>
                                 </div>
                                 <button>
-                                    <Link style={{ color: "white" }} to="/payment">Checkout</Link>
+                                    <Link style={{ color: "white" }} to="/check1">Checkout</Link>
                                 </button>
                             </div>
 

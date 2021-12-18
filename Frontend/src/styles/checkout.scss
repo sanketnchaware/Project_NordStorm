@@ -17,12 +17,14 @@
 }
 
 .secure-checkout{
-    display: flex
+    display: flex;
+    width:80vw;
 }
 
 .secure-checkout>div:nth-child(1){
     font-size: 25px;
     font-weight: 700;
+    width:80vw;
 }
 
 .secure-checkout>div:nth-child(1){
@@ -233,4 +235,25 @@
 
 .checkout-1-child-2>p{
     color: #1E90FF;
+}
+
+.cart-product{
+    display: flex;
+    width: 100%;
+}
+
+.cart-product>div:nth-child(1){
+    width: 10vw;
+    // border: 1px solid black;
+
+}
+
+.cart-product>div:nth-child(1)>img{
+    width: 50%;
+    margin-top:10%
+}
+
+.cart-product>div:nth-child(2){
+    margin-top:10%
+
 }

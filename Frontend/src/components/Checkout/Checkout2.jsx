@@ -1,12 +1,17 @@
 import "../../styles/checkout2.scss";
 import lock from "../images/checkout/lock.png";
 import arrow from "../images/checkout/arrow.png";
-import cart from "../images/checkout/cart.png";
+import carto from "../images/checkout/cart.png";
 import card from "../images/checkout/card.png";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import cloudfare from "../images/checkout/cloudfare.png";
-
+import { useContext } from "react";
+import { CartContext } from "../../contexts/CartContext";
 export const Checkout2 = () => {
+    const { cart } = useContext(CartContext);
+    const history = useHistory();
+    let result = localStorage.getItem("data");
+    result = JSON.parse(result)
     return (
         <>
             <div className="head-nord">
@@ -30,7 +35,7 @@ export const Checkout2 = () => {
 
                     </div>
 
-                    <div>Already have a Borderfree account?<Link>Click here.</Link> </div>
+                    <div>Already have a Borderfree account?<Link to="/signup">Click here.</Link> </div>
 
                     <div className="hr-line-2"></div>
 
@@ -39,10 +44,7 @@ export const Checkout2 = () => {
                     <div>
                         <div>
                             <div>DELIVERY ADDRESS:</div>
-                            <p>MAHANTI KESHAV
-                                FLAT NO 310, SREENIDHI TOWERS, KALY
-                                GODAVARIKHANI, TELANGANA 505209
-                                INDIA</p>
+                            <p>{ result.name},{ result.address},{ result.city}</p>
                         </div>
 
                         <div>
@@ -65,7 +67,7 @@ export const Checkout2 = () => {
                         <input type="radio" />Credit or Debit Card <img src={card} alt="" />
                     </div>
 
-                    <div><input type="text" placeholder="Card Number" autocomplete="off"/></div>
+                    <div><input type="text" placeholder="Card Number" autocomplete="off" /></div>
                     <div><input type="text" placeholder="MM / YY" /><input type="text" placeholder="Security Code" /></div>
 
                     <div className="hr-line-2"></div>
@@ -76,7 +78,7 @@ export const Checkout2 = () => {
                     </div>
 
                     <div className="continue-btn-2">
-                        <button>Place Order <img src={arrow} alt="" /></button>
+                        <button onClick={() => { history.push("/success") }}>Place Order</button>
                     </div>
 
                     <div>This order total is 100% guaranteed. There will be no additional charges due upon receipt.</div>
@@ -88,15 +90,15 @@ export const Checkout2 = () => {
 
                 <div className="checkout-2-child-3">
 
-                    <div><img src={cart} alt="" />Your Order</div>
+                    <div><img src={carto} alt="" />Your Order</div>
 
                     <div className="continue-btn-2">
-                        <button>Continue <img src={arrow} alt="" /></button>
+                        <button>Continue </button>
                     </div>
 
                     <div>
                         <p>Items</p>
-                        <div>₹6,505</div>
+                        <div>₹{cart.length === 0 ? "0" : cart[0].price}</div>
                     </div>
 
                     <div>
@@ -111,7 +113,7 @@ export const Checkout2 = () => {
 
                     <div>
                         <p>TOTAL</p>
-                        <div>(INR)₹12,847</div>
+                        <div>(INR)₹{cart.length === 0 ? "0" : cart[0].price + 2537 + 3805}</div>
                     </div>
                     <div className="hr-line-2"></div>
                     <p>+ Promo Code</p>

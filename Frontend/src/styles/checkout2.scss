@@ -17,12 +17,15 @@
 }
 
 .secure-checkout-2{
-    display: flex
+    display: flex;
+    width:80vw;
 }
 
 .secure-checkout-2>div:nth-child(1){
     font-size: 25px;
     font-weight: 700;
+    width:80vw;
+    // border: 1px solid black;
 }
 
 .secure-checkout-2>div:nth-child(1){
