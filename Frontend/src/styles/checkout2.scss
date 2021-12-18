@@ -1,0 +1,260 @@
+.checkout-2-parent{
+    width: 80vw;
+    // height: 100vh;
+    // border: 1px solid black;
+    margin: 2% auto 0 auto;
+    display: flex
+}
+
+.head-nord>p{
+    font-size: 30px;
+    font-weight:700
+}
+
+.checkout-2-parent>div:nth-child(1){
+    width: 70%;
+    // border: 1px solid black;
+}
+
+.secure-checkout-2{
+    display: flex
+}
+
+.secure-checkout-2>div:nth-child(1){
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.secure-checkout-2>div:nth-child(1){
+    width: 18vw;
+    // border: 1px solid black;
+}
+
+.secure-checkout-2>div:nth-child(1)>img{
+   width: 15%;
+}
+
+.secure-checkout-2>div:nth-child(2){
+    display: flex;
+    align-items: end;
+    width: 18vw;
+}
+
+.secure-checkout-2>div:nth-child(3){
+    width: 25vw;
+    display: flex;
+    justify-content:end;
+}
+
+.secure-checkout-2>div:nth-child(3)>select{
+    border: 0;
+    outline: none
+}
+
+
+.checkout-2-child-2>div{
+    margin-top: 1.8%;
+}
+
+.checkout-2-child-2>div:nth-child(2){
+    margin:0 0 0 2%;
+}
+
+.hr-line-2{
+    width: 93%;
+    height:1px;
+    background-color:rgb(192, 189, 189);
+    margin:3% 0 0 2%;
+}
+
+.checkout-2-child-2>div:nth-child(4){
+    margin-left: 2%;
+    width: 30vw;
+    display: flex;
+    font-size: 20px;
+}
+
+.checkout-2-child-2>div:nth-child(4)>div{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    margin-right: 3%;
+    font-size: 15px;
+}
+
+.shipping-calculate{
+    display: flex
+}
+
+.shipping-calculate>div:nth-child(2){
+    width: 20vw;
+    // border: 1px solid black;
+}
+
+.shipping-calculate>div:nth-child(3){
+    width: 16vw;
+    // border: 1px solid black;
+}
+
+.checkout-2-child-2>div:nth-child(13){
+    width: 20vw;
+    margin: 5% auto 0 auto;
+}
+
+.checkout-2-child-2>div:nth-child(13)>button{
+    width: 18vw;
+    background-color:black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.continue-btn-2{
+    width: 20vw;
+    margin: 5% auto 0 auto;     
+}
+
+.continue-btn-2>button{
+    width: 20vw;
+    background-color:black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    height: 40px; 
+}
+
+.checkout-2-child-2>div:nth-child(17){
+    text-align: center;
+    font-size: 12px;
+}
+
+// right side style start here
+// #F6F6F6
+
+.checkout-2-child-3{
+    background-color: #F6F6F6;
+    width: 100%;
+}
+
+.checkout-2-child-3>div:nth-child(1){
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 5%;
+}
+
+.checkout-2-child-3>div:nth-child(1)>img{
+    width: 10%;
+}
+
+.checkout-2-child-3>div:nth-child(3),
+.checkout-2-child-3>div:nth-child(4),
+.checkout-2-child-3>div:nth-child(5),
+.checkout-2-child-3>div:nth-child(6){
+    display: flex;
+   
+}
+
+.checkout-2-child-3>div:nth-child(3){
+    margin-top: 10%;
+}
+
+.checkout-2-child-3>div:nth-child(3)>div,
+.checkout-2-child-3>div:nth-child(4)>div,
+.checkout-2-child-3>div:nth-child(5)>div,
+.checkout-2-child-3>div:nth-child(6)>div{
+   display: flex;
+   justify-content:end;
+   width: 10vw;
+   margin-left: 39%;
+}
+
+.checkout-2-child-3>div:nth-child(6){
+    font-weight: 700;
+}
+
+.checkout-2-child-3>p{
+    color: #1E90FF;
+}
+
+.checkout-2-child-2>div:nth-child(5){
+    display: flex;
+    margin-left: 2%;
+}
+
+.checkout-2-child-2>div:nth-child(6){
+    display: flex;
+    margin-left: 1%;
+    width: 100%;
+    display: flex;
+    font-size: 20px;
+    // background-color:black;
+}
+
+.checkout-2-child-2>div:nth-child(6)>div{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 1%;
+}
+
+.checkout-2-child-2>div:nth-child(6)>span>img{
+  margin-left: 600%;
+}
+
+.checkout-2-child-2>div:nth-child(7){
+    margin-left: 2%;
+}
+
+.checkout-2-child-2>div:nth-child(8){
+    margin-left: 2%;
+}
+
+.checkout-2-child-2>div:nth-child(12){
+    display: flex;
+    margin-left: 2%;
+}
+
+.checkout-2-child-2>div:nth-child(16){
+    text-align: center;
+    font-size: 12px;
+}
+
+.checkout-2-child-2>div:nth-child(14){
+    text-align: center;
+    font-size: 14px;
+}
+
+
+.checkout-2-child-2>div:nth-child(8)>img{
+    width:10%
+}
+
+.checkout-2-child-2>div:nth-child(8)>input{
+    margin: 0 1% 0 0;
+}
+
+//card input style
+.checkout-2-child-2>div:nth-child(9)>input{
+    width: 29vw;
+    margin-left: 2%;
+    height:40px;
+    outline: none; 
+    padding-left: 1%;
+}
+
+.checkout-2-child-2>div:nth-child(10)>input{
+
+    width: 14vw;
+    margin-left: 2%;
+    height:40px;
+    outline: none;
+    padding-left: 1%;
+    
+}

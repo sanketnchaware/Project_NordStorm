@@ -1,0 +1,37 @@
+.giftwarmth-parent{
+    display:flex;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.giftwarmth-parent>div:nth-child(1){
+    width: 36%;
+    // border: 1px solid black
+}
+
+.giftwarmth-parent>div:nth-child(2){
+    width: 70%;
+    // border: 1px solid black
+}
+
+.giftwarmth-child-2>img{
+    width: 100%;
+
+}
+
+.giftwarmth-child-2>div>img{
+    width: 100%;
+}
+
+.giftwarmth-child-1>div>p{
+    text-align: center;
+    text-decoration: underline;
+    margin: -40% 0 0 0;
+}
+
+.giftwarmth-child-2>div>p{
+    text-align: center;
+    text-decoration: underline;
+    margin: -2% 0 0 5%;
+}
+    

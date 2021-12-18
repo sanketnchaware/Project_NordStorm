@@ -1,0 +1,90 @@
+.greatdeal-parent{
+    width: 100%;
+    height: 100vh;
+    margin:5% 0 0 0;
+    display: flex;
+}
+
+.greatdeal-child{
+    width: 25vw;
+}
+
+.greatdeal-child>div:nth-child(1)>img{
+    width: 100%;
+}
+
+.greatdeal-child>div:nth-child(2),
+.greatdeal-child>div:nth-child(3),
+.greatdeal-child>div:nth-child(4),
+.greatdeal-child>div:nth-child(5),
+.greatdeal-child>div:nth-child(6),
+.greatdeal-child>div:nth-child(7),
+.greatdeal-child>div:nth-child(8){
+    margin:2% 0 0 8%;
+}
+
+.greatdeal-child>div:nth-child(4){
+    color:#00823F;
+    font-weight: 700;
+}
+
+.greatdeal-child>div:nth-child(5){
+    font-weight: 700;
+}
+
+.greatdeal-child>div:nth-child(8){
+    margin-top: -5%;
+}
+
+.greatdeal-child>div:nth-child(2){
+    width: 4.3vw;
+    padding: 1%;
+    background-color: #E3E3E3;
+    font-weight: bold;
+}
+
+.greatdeal-color{
+    display: flex;
+    width: 90%;
+}
+
+.greatdeal-color>div{
+    width: 26px;
+    height: 26px;
+    border-radius:13px;
+    margin-right: 6%;
+}
+
+.greatdeal-color>div:nth-child(1){
+    background-color: #685F4D;
+}
+
+.greatdeal-color>div:nth-child(2){
+    background-color: #DEA234;
+}
+
+.greatdeal-color>div:nth-child(3){
+    background-color: #DA8A8A;
+}
+
+.greatdeal-color>div:nth-child(4){
+    background-color: #29282B;
+}
+
+.greatdeal-price{
+    display: flex;
+}
+
+.greatdeal-price>h6{
+    color: #D61F27;
+    font-weight: 700;
+}
+
+.greatdeal-price>p{
+    text-decoration: line-through;
+    color: #737373;
+}
+
+.greatdeal-price>span{
+    color: #737373;
+}

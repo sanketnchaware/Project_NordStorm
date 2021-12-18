@@ -1,0 +1,16 @@
+.hero-banner{
+    width: 99%;
+}
+
+.hero-banner>img:nth-child(1),
+.hero-banner>img:nth-child(3){
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+
+.hero-banner>img:nth-child(2){
+    position: absolute;
+    top: 38%;
+    left: 43%;
+}

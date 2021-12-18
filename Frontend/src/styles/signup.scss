@@ -1,0 +1,55 @@
+.signup-parent{
+    width: 30vw;
+    // border: 1px solid black;
+    margin: 1% auto 0 auto;
+}
+
+.signup-parent>h5{
+    font-size: 25px;
+}
+
+.signup-parent>p{
+    font-size: 18px;
+    margin-top:1% ;
+    color: #737373;
+}
+
+.signup-parent>h6{
+    font-size: 18px;
+    margin-top:1% ;
+    color: #1d1c1c; 
+}
+
+.signup-parent>h6>span{
+    color: red;
+}
+
+.signup-parent>input{
+    width: 100%;
+    height: 38px;
+    outline: none;
+    padding-left: 1%;
+    border: 0.5px solid #BBBBBB
+}
+
+.signup-parent>div{
+    margin-top: 3%;  
+}
+
+.signup-parent>div>span{
+    text-decoration: underline;
+}
+
+.signup-parent>button{
+    margin-top: 3%;  
+    width: 100%;
+    height: 40px;
+    text-decoration: underline;
+    background-color: black;
+    color: white;
+    border: 0;
+}
+
+.spinner{
+    margin-top: -15%;
+}

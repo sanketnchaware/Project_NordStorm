@@ -1,0 +1,236 @@
+.checkout-1-parent{
+    width: 80vw;
+    // height: 100vh;
+    // border: 1px solid black;
+    margin: 2% auto 0 auto;
+    display: flex
+}
+
+.head-nord>p{
+    font-size: 30px;
+    font-weight:700
+}
+
+.checkout-1-parent>div:nth-child(1){
+    width: 70%;
+    // border: 1px solid black;
+}
+
+.secure-checkout{
+    display: flex
+}
+
+.secure-checkout>div:nth-child(1){
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.secure-checkout>div:nth-child(1){
+    width: 18vw;
+    // border: 1px solid black;
+}
+
+.secure-checkout>div:nth-child(1)>img{
+   width: 15%;
+}
+
+.secure-checkout>div:nth-child(2){
+    display: flex;
+    align-items: end;
+    width: 18vw;
+}
+
+.secure-checkout>div:nth-child(3){
+    width: 25vw;
+    display: flex;
+    justify-content:end;
+}
+
+.secure-checkout>div:nth-child(3)>select{
+    border: 0;
+    outline: none
+}
+
+.checkout-1-child-1>div{
+    margin-top: 1.8%;
+}
+
+.checkout-1-child-1>div:nth-child(2){
+    margin:0 0 0 2%;
+}
+
+.hr-line{
+    width: 93%;
+    height:1px;
+    background-color:rgb(192, 189, 189);
+    margin:3% 0 0 2%;
+}
+
+.checkout-1-child-1>div:nth-child(4){
+    margin-left: 2%;
+    width: 30vw;
+    display: flex;
+    font-size: 20px;
+}
+
+.checkout-1-child-1>div:nth-child(4)>div{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color:black;
+    color: white;
+    text-align: center;
+    margin-right: 3%;
+    font-size: 15px;
+}
+
+.checkout-1-child-1>div:nth-child(15){
+    margin-left: 2%;
+    width: 30vw;
+    display: flex;
+    font-size: 20px;
+}
+
+.checkout-1-child-1>div:nth-child(15)>div{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    border: 1px solid black;
+    text-align: center;
+    margin-right: 3%;
+    font-size: 15px;
+}
+
+.checkout-1-child-1>div:nth-child(11){
+    width: 93%;
+    background-color:#E6E6E6;
+    margin:3% 0 0 2%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    font-weight: 700;
+}
+
+.shipping-calculate{
+    display: flex
+}
+
+// checkout input box style
+@mixin input-long {
+    width: 95%;
+    height: 40px;
+    margin:0 0 0 2%;
+    padding-left: 1%;
+    outline: none
+}
+
+@mixin input-short{
+    width: 46%;
+    height: 40px;
+    margin:0 0 0 2%;
+    padding-left: 1%;
+    outline: none
+}
+
+.checkout-1-child-1>div:nth-child(5)>input,
+.checkout-1-child-1>div:nth-child(7)>input{
+    @include input-long
+}
+
+.checkout-1-child-1>div:nth-child(8)>input,
+.checkout-1-child-1>div:nth-child(9)>input,
+.checkout-1-child-1>div:nth-child(10)>input,
+.checkout-1-child-1>div:nth-child(6)>input{
+    @include input-short
+}
+
+.shipping-calculate>div:nth-child(2){
+    width: 20vw;
+    // border: 1px solid black;
+}
+
+.shipping-calculate>div:nth-child(3){
+    width: 16vw;
+    // border: 1px solid black;
+}
+
+.checkout-1-child-1>div:nth-child(13){
+    width: 20vw;
+    margin: 5% auto 0 auto;
+}
+
+.checkout-1-child-1>div:nth-child(13)>button{
+    width: 18vw;
+    background-color:black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    height: 40px;
+}
+
+.continue-btn{
+    width: 20vw;
+    margin: 5% auto 0 auto;     
+}
+
+.continue-btn>button{
+    width: 20vw;
+    background-color:black;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    height: 40px; 
+}
+
+.checkout-1-child-1>div:nth-child(17){
+    text-align: center;
+    font-size: 12px;
+}
+
+// right side style start here
+// #F6F6F6
+
+.checkout-1-child-2{
+    background-color: #F6F6F6;
+    width: 100%;
+}
+
+.checkout-1-child-2>div:nth-child(1){
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 5%;
+}
+
+.checkout-1-child-2>div:nth-child(1)>img{
+    width: 10%;
+}
+
+.checkout-1-child-2>div:nth-child(3),
+.checkout-1-child-2>div:nth-child(4),
+.checkout-1-child-2>div:nth-child(5),
+.checkout-1-child-2>div:nth-child(6){
+    display: flex;
+   
+}
+
+.checkout-1-child-2>div:nth-child(3){
+    margin-top: 10%;
+}
+
+.checkout-1-child-2>div:nth-child(3)>div,
+.checkout-1-child-2>div:nth-child(4)>div,
+.checkout-1-child-2>div:nth-child(5)>div,
+.checkout-1-child-2>div:nth-child(6)>div{
+   display: flex;
+   justify-content:end;
+   width: 10vw;
+   margin-left: 39%;
+}
+
+.checkout-1-child-2>div:nth-child(6){
+    font-weight: 700;
+}
+
+.checkout-1-child-2>p{
+    color: #1E90FF;
+}

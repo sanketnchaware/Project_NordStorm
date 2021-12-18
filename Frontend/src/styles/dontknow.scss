@@ -1,0 +1,49 @@
+.dontknow-parent{
+    width: 99%;
+    margin-top: 10%;
+}
+
+.dontknow-parent>img{
+    width: 100%;
+}
+
+.dontknow-child{
+    margin: -10% 0 0 15%;
+}
+
+.dontknow-child>h5{
+    font-weight: 700;
+    font-size: 19px;
+}
+
+.dontknow-child>p{
+    width: 50vw;
+    font-weight: 700;
+    font-size: 13px;
+}
+
+.dontknow-child>div{
+    display: flex;
+}
+
+.dontknow-child>div>p{
+   margin-right: 3%;
+   font-size: 13px;
+   text-decoration: underline;
+}
+
+.dotline{
+    width: 99%;
+    margin-top: 3%;
+}
+
+.dotline>img{
+    width: 100%;
+}
+
+.inspired-get{
+    text-align: center;
+    font-weight: 700;
+    font-size: 21px;
+    margin: 3% 0 3% 0;
+}

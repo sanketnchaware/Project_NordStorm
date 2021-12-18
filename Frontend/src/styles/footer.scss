@@ -1,0 +1,48 @@
+.footer-parent{
+    width: 100%;
+    display: flex;
+    background-color: #F9F9F9;
+    margin:3% 0 0 0;
+    padding: 2% 0 0 1%;
+}
+
+.footer-parent>div{
+    width: 40vw;
+}
+
+.footer-child-1>div,
+.footer-child-2>div,
+.footer-child-3>div,
+.footer-child-4>div,
+.footer-child-5>div{
+    margin-top: 13%;
+    font-size:13px;
+}
+
+
+.footer-child-1>p,
+.footer-child-2>p,
+.footer-child-3>p,
+.footer-child-4>p,
+.footer-child-5>p{
+    font-size:14px;
+    font-weight:700
+}
+
+.footer-child-7>a>img{
+    margin-left: 60%;
+}
+
+.footer-legal{
+    width: 100%;
+    display: flex;
+    background-color: #F9F9F9;
+    margin:0 0 1% 0;
+    padding: 2% 0 2% 1%;
+    font-size: 13px;
+}
+
+.footer-legal>p{
+    margin:0 5% 0 0;
+}
+

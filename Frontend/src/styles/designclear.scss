@@ -1,0 +1,22 @@
+.design-parent{
+    width: 99%;
+}
+
+.design-parent>img{
+    width: 100%;
+}
+
+.design-parent>p{
+    margin: -10% 0 0 0;
+    text-align: center;
+    color: white;
+}
+
+.design-parent>p>span{
+   text-decoration: underline;
+}
+
+.design-parent>div>img{
+    width: 100%;
+    margin-top: 10%;
+}

@@ -1,0 +1,20 @@
+.tidethings-parent{
+    width: 99%;
+}
+
+.tidethings-parent>img{
+    width: 100%;
+}
+
+.tidethings-child{
+    margin:-10% 0 0 25%;
+    color: white;
+}
+
+.tidethings-child>h5{
+    font-weight: bold; 
+}
+
+.tidethings-child>span{
+    text-decoration: underline;
+}
