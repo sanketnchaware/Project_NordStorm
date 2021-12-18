@@ -27,7 +27,7 @@ body {
     overflow: hidden;
     /* position: relative; */
     /* background-color: red; */
-    margin:0 1.58rem;
+    margin:0 2rem;
 }
 
 .dropdown:first-child , .dropdown:last-child {

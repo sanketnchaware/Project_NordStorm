@@ -86,7 +86,7 @@ export const Checkout1 = () => {
                             <div><input type="checkbox" /></div>
                             <div><div> Standard  </div>No additional import charges at delivery</div>
                             <div>11-21 business days</div>
-                            <div>(INR) ₹2,537</div>
+                            <div>₹{cart.length === 0 ? "0" : cart[0].price}</div>
                         </div>
                         <div className="shipping-calculate">
                             <div><input type="checkbox" /></div>
@@ -137,7 +137,7 @@ export const Checkout1 = () => {
 
                     <div>
                         <p>Items</p>
-                        <div>₹ {cart[0]}</div>
+                        <div>₹{cart.length === 0 ? "0" : cart[0].price}</div>
                     </div>
 
                     <div>
@@ -153,7 +153,7 @@ export const Checkout1 = () => {
                     <div>
                         <p>TOTAL</p>
                         {/* {cart[0].price+2537+3805} */}
-                        <div>(INR)₹ </div>
+                        <div>(INR)₹{cart.length === 0 ? "0" : cart[0].price + 2537 + 3805}</div>
                     </div>
                     <div className="hr-line"></div>
                     <p>+ Promo Code</p>
