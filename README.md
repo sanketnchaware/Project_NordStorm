@@ -1,7 +1,7 @@
 # Project-Nordstrom(Cloned)
 Nordstrom, Inc. is an American luxury department store chain. Founded in 1901 by John W. Nordstrom and Carl F. Wallin, it originated as a shoe store and evolved into a full-line retailer with departments for clothing, footwear, handbags, jewelry, accessories, cosmetics, and fragrances
 
-| Visit the web app  | [Nordstrom]() |
+| Visit the web app  | [Nordstrom](https://project-nordstrom.netlify.app/) |
 | --- | ---|
 
 
