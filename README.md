@@ -14,21 +14,31 @@ Nordstrom, Inc. is an American luxury department store chain. Founded in 1901 by
 ## Screenshots of our project nordstrom .
 ### 1. Home Page .
 <p align="center">
-<img src=""/>
+ 
+![Screenshot (579)](https://user-images.githubusercontent.com/68117560/149112710-a7fbb537-6c22-45d7-b788-dfb2c8db0ff4.png)
+
 </p>
+
+
+
+
 
 
 
 ### 2. Signup page .
 <p align="center">
-<img src=""/>
+ 
+![Screenshot (583)](https://user-images.githubusercontent.com/68117560/149117133-724fa266-6f23-4af0-901b-67d2c4bed4b6.png)
+
 </p>
 
 
 
 ### 3. Product page .
 <p align="center">
-<img src=""/>
+ 
+![Screenshot (580)](https://user-images.githubusercontent.com/68117560/149117176-b8481d54-9de3-4145-a955-3d4034ce3f8e.png)
+
 </p>
 
 
@@ -36,28 +46,31 @@ Nordstrom, Inc. is an American luxury department store chain. Founded in 1901 by
 ### 5. Product information page .
 <p align="center">
 
-<img src=""/>
+![Screenshot (582)](https://user-images.githubusercontent.com/68117560/149117207-ac215326-56d4-4eb8-aaf3-96a2b5cc277f.png)
 
 </p>
 
 ### 6. Product filter .
 <p align="center">
 
-<img src=""/>
+![Screenshot (581)](https://user-images.githubusercontent.com/68117560/149117237-55d5d52f-9cbe-4443-863d-5ad979b2f698.png)
+
 
 </p>
 
 ### 7. Cart page .
 <p align="center">
 
-<img src=""/>
+![Screenshot (584)](https://user-images.githubusercontent.com/68117560/149117266-249865f2-3443-4130-b4f8-833af16228b4.png)
+
 
 </p>
 
 ### 8. Payment page .
 <p align="center">
 
-<img src=""/>
+![Screenshot (585)](https://user-images.githubusercontent.com/68117560/149117297-888ccd9c-b15d-420a-8ed0-dc755b15ba3c.png)
+
 
 </p>
 
