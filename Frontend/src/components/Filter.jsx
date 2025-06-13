@@ -338,69 +338,7 @@ export const Filter = ({ bags, handleFilter }) => {
                 </div>
             </div>
 
-            <div>
-                <button className="sorting-btn" onClick={() => {
-                    if (Rating) {
-                        setRating(false);
-                    }
-                    else {
-                        setRating(true);
-                    }
-                }}>Rating</button>
-                <div className="sorting-div" style={Rating ? { display: "none" } : { display: "block" }}>
-
-                    <p onClick={() => {
-                        axios.get("http://localhost:2325/sort/rating?rating=5")
-                            .then((res) => {
-                                handleFilter(res.data.prodRating)
-                            }).catch((err) => {
-                                console.log(err)
-                            })
-                    }}
-                    >
-                        5</p>
-                    <p
-                        onClick={() => {
-                            axios.get("http://localhost:2325/sort/rating?rating=4")
-                                .then((res) => {
-                                    handleFilter(res.data.prodRating)
-                                }).catch((err) => {
-                                    console.log(err)
-                                })
-                        }}
-                    > 4</p>
-                    <p
-                        onClick={() => {
-                            axios.get("http://localhost:2325/sort/rating?rating=3")
-                                .then((res) => {
-                                    handleFilter(res.data.prodRating)
-                                }).catch((err) => {
-                                    console.log(err)
-                                })
-                        }}
-                    > 3</p>
-                    <p
-                        onClick={() => {
-                            axios.get("http://localhost:2325/sort/rating?rating=2")
-                                .then((res) => {
-                                    handleFilter(res.data.prodRating)
-                                }).catch((err) => {
-                                    console.log(err)
-                                })
-                        }}
-                    >2</p>
-                    <p
-                        onClick={() => {
-                            axios.get("http://localhost:2325/sort/rating?rating=1")
-                                .then((res) => {
-                                    handleFilter(res.data.prodRating)
-                                }).catch((err) => {
-                                    console.log(err)
-                                })
-                        }}
-                    >1</p>
-                </div>
-            </div>
+          
 
 
 
