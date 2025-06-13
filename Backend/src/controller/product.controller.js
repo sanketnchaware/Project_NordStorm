@@ -1,4 +1,3 @@
-
 // How to use API
 /*
 Base URL = http://localhost:2325
@@ -26,84 +25,90 @@ Base URL = http://localhost:2325
 
 */
 
-
-
-const router = require('express').Router();
+const router = require("express").Router();
 const Product = require("../models/product.model");
 
-
 //to get all products
-router.get("/product", async (req, res) => {
-    const product = await Product.find().lean().exec()
-    return res.status(201).send({ product })
-})
+router.get("/products", async (req, res) => {
+  const products = await Product.find().lean().exec();
+  return res.status(200).send({ data: products });
+});
+
+router.post("/products", async (req, res) => {
+  const payload = req.body;
+
+  try {
+    const newProduct = new Product(payload);
+    await newProduct.save();
+    res
+      .status(201)
+      .json({ message: "Product created successfully", product: newProduct });
+  } catch (error) {
+    console.error("Error creating product:", error.message);
+    res
+      .status(500)
+      .json({ message: "Failed to create product", error: error.message });
+  }
+});
 
 //to get single products
 router.get("/product/single/:id", async (req, res) => {
-    const id = req.params.id;
-    const product = await Product
-        .findById({ _id: id })
-        .lean()
-        .exec()
-    return res.status(201).send({ product })
-})
+  const id = req.params.id;
+  const product = await Product.findById({ _id: id }).lean().exec();
+  return res.status(201).send({ product });
+});
 
-// to sort the product by gender 
+// to sort the product by gender
 router.get("/sort/gender", async (req, res) => {
-    const gender = req.query.gender;
-    const product = await Product
-        .find({ gender: { $eq: `${gender}` } })
-        .lean()
-        .exec();
-    return res.status(201).send({ product });
-})
+  const gender = req.query.gender;
+  const product = await Product.find({ gender: { $eq: `${gender}` } })
+    .lean()
+    .exec();
+  return res.status(201).send({ product });
+});
 
 //to sort the product by colors
 router.get("/sort/color", async (req, res) => {
-    const color = req.query.color;
-    const prodColor = await Product
-        .find({ color: { $eq: `${color}` } })
-        .lean()
-        .exec();
-    return res.status(201).send({ prodColor });
-})
+  const color = req.query.color;
+  const prodColor = await Product.find({ color: { $eq: `${color}` } })
+    .lean()
+    .exec();
+  return res.status(201).send({ prodColor });
+});
 
 //to sort the product by brands
 router.get("/sort/brand", async (req, res) => {
-    const brand = req.query.brand;
-    const prodBrand = await Product
-        .find({ brand: { $eq: `${brand}` } })
-        .lean()
-        .exec();
-    return res.status(201).send({ prodBrand });
-})
+  const brand = req.query.brand;
+  const prodBrand = await Product.find({ brand: { $eq: `${brand}` } })
+    .lean()
+    .exec();
+  return res.status(201).send({ prodBrand });
+});
 
 //to sort the product by price
 router.get("/sort/price", async (req, res) => {
-    const from = req.query.from;
-    const to = req.query.to;
-    const prodPrice = await Product
-        .find({ $and: [{ price: { $gt: `${from}` } }, { price: { $lt: `${to}` } }] })
-        .lean()
-        .exec();
-    return res.status(201).send({ prodPrice });
-})
-
+  const from = req.query.from;
+  const to = req.query.to;
+  const prodPrice = await Product.find({
+    $and: [{ price: { $gt: `${from}` } }, { price: { $lt: `${to}` } }],
+  })
+    .lean()
+    .exec();
+  return res.status(201).send({ prodPrice });
+});
 
 //to sort the product by rating
 router.get("/sort/rating", async (req, res) => {
-    const rating = req.query.rating;
+  const rating = req.query.rating;
 
-    if (rating <= 5) {
-        const prodRating = await Product
-            .find({ rating: { $eq: `${rating}` } })
-            .lean()
-            .exec();
-        return res.status(201).send({ prodRating });
-    } else {
-        return res.status(400).send("rating must be below 5");
-    }
-
-})
+  if (rating <= 5) {
+    const prodRating = await Product.find({ rating: { $eq: `${rating}` } })
+      .lean()
+      .exec();
+    return res.status(201).send({ prodRating });
+  } else {
+    return res.status(400).send("rating must be below 5");
+  }
+});
 
 module.exports = router;
